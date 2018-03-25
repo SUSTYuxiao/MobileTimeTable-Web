@@ -1,0 +1,158 @@
+<!--没有使用js的版本-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta charset="utf-8">-->
+    <title>国贸课表</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .RoomName{font-size: 105%;font-weight: bold;}
+    .ListNumber{font-size: 120%;font-weight: bold;line-height: 300%;}
+    .Other{font-size: 80%;}
+    .UnOpen{color:gainsboro;}
+
+</style>
+
+<body>
+<br>
+<div class="container" style="text-align:center">
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <b style="font-size: 130%">Time Table</b>
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row listNumber">
+        <div class="col-xs-2 col-md-2"><b>周</b></div>
+        <div class="col-xs-2 col-md-2"><b>一</b></div>
+        <div class="col-xs-2 col-md-2"><b>二</b></div>
+        <div class="col-xs-2 col-md-2"><b>三</b></div>
+        <div class="col-xs-2 col-md-2"><b>四</b></div>
+        <div class="col-xs-2 col-md-2"><b>五</b></div>
+    </div>
+    <div style="height:200%"></div>
+
+    <div class="row" style="margin-top: 5%">
+        <div class="col-xs-2"><b class="ListNumber">1</b></div>
+        <div class="col-xs-2">
+            <div class="RoomName">技贸</div>
+            <div class="Other">F405</div>
+            <div class="Other">1-19</div>
+        </div>
+        <div class="col-xs-2">
+            <div class="RoomName">函电</div>
+            <div class="Other">D204</div>
+            <div class="Other">1-19</div>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2">
+            <div class="RoomName">技经</div>
+            <div class="Other">D203</div>
+            <div class="Other">1-8</div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-xs-2"><b class="ListNumber">2</b></div>
+        <!--<div class="col-xs-2"><b></b></div>-->
+        <div class="col-xs-2">
+            <div class="RoomName">产经</div>
+            <div class="Other">C405</div>
+            <div class="Other">1-19</div>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2">
+            <div class="RoomName">财管</div>
+            <div class="Other">F303</div>
+            <div class="Other">1-13</div>
+        </div>
+        <div class="col-xs-2">
+            <div class="RoomName">外运</div>
+            <div class="Other">D301</div>
+            <div class="Other">1-13</div>
+        </div>
+
+        <div class="col-xs-2">
+            <div class="RoomName">结算</div>
+            <div class="Other">D406</div>
+            <div class="Other">1-19</div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row" style="margin-top: 5%">
+        <div class="col-xs-2"><b class="ListNumber">3</b></div>
+        <div class="col-xs-2">
+            <div class="RoomName">贸实</div>
+            <div class="Other">B104</div>
+            <div class="Other">1-8</div>
+        </div>
+        <div class="col-xs-2">
+            <div class="RoomName">外运</div>
+            <div class="Other">D404</div>
+            <div class="Other">1-13</div>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2">
+            <div class="RoomName">服务</div>
+            <div class="Other">F405</div>
+            <div class="Other">1-19</div>
+        </div>
+        <div class="col-xs-2">
+            <div class="RoomName">规划</div>
+            <div class="Other">D405</div>
+            <div class="Other">1-4</div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row" style="margin-top: 5%">
+        <div class="col-xs-2"><b class="ListNumber">4</b></div>
+        <div class="col-xs-2">
+            <div class="RoomName">财管</div>
+            <div class="Other">F303</div>
+            <div class="Other">1-13</div>
+        </div>
+        <div class="col-xs-2">
+            <div class="RoomName">技经</div>
+            <div class="Other">D204</div>
+            <div class="Other">1-8</div>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2">
+            <div class="RoomName">贸实</div>
+            <div class="Other">B104</div>
+            <div class="Other">1-8</div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+</div>
+<hr>
+
+<div class="row Other">
+    <div class="col-xs-offset-1">
+        * 晚上还有 <span class="UnOpen">形势政策 教3-102 8-9周</span><br>
+        * 10-12 周实习，不上课<br>
+        <!--* <span class="UnOpen">灰字</span>为目前不上的科目<br>-->
+    </div>
+</div>
+<hr>
+
+<div class="row Other" style="text-align: center">
+    <div class="col-xs-5 col-xs-offset-7">
+        <div class="row"><i style="font-size: 50%">Last Update</i></div>
+        <div class="row"><i style="font-size: 50%">2018-03-25 23:55</i></div>
+    </div>
+</div>
+
+</body>
+</html>
+
